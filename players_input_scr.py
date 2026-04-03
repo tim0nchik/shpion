@@ -28,3 +28,15 @@ class PlayersInputScreen(Screen):
             app.players_count = 3
             self.manager.current = 'scr2'
         button1.on_press = but1
+        def but2():
+            app.players_count = 4
+            self.manager.current = 'scr2'
+        button2.on_press = but2
+        def but3():
+            app.players_count = 5
+            self.manager.current = 'scr2'
+        button3.on_press = but3
+        def but4():
+            app.players_count = 6
+            self.manager.current = 'scr2'
+        button4.on_press = but4
