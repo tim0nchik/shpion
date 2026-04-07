@@ -25,9 +25,12 @@ class RoleScr(Screen):
             if self.button.text == 'показать карту':
                 if self.current in self.spies:
                     self.button.text = 'шпион'
+                    self.button.background_color = (0.8, 0.2, 0.2, 1)
                 else:
                     self.button.text = random_data
+                    self.button.background_color = (0.2, 0.8, 0.2, 1)
                 self.current +=1
             else:
                 self.button.text = 'показать карту'
+                self.button.background_color = (0.5, 0.5, 0.5, 1)
         self.button.on_press = role
