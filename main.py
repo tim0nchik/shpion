@@ -8,7 +8,7 @@ from role_scr import RoleScr
 class MyApp(App):
     players_count = 0
     spies_count = 0
-    word = ''
+    
     def build(self):
         scrm = ScreenManager() 
         scrm.add_widget(PlayersInputScreen(name = 'scr1'))
